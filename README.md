@@ -3,7 +3,7 @@ DeepaMehta 3 Project Plugin
 ===========================
 
 Adds project management capabilities to DeepaMehta 3.
-For the moment just a "To Do" document type is provided.
+For the moment just a *To Do* topic type is provided.
 More to come.
 
 
@@ -29,16 +29,38 @@ Installation
 4.  Upload changes to CouchDB:
         couchapp push http://localhost:5984/deepamehta3-db
 
+5.  Check if installation was successful: visit DeepaMehta 3 in your webbrowser (resp. press reload):  
+    <http://localhost:5984/deepamehta3-db/_design/deepamehta3/index.html>  
+    If you see the *To Do* entry in the type menu (next to the *Create* button) everything is OK.
+
 
 Usage
 -----
 
-1.  Visit DeepaMehta 3 in your webbrowser (resp. press reload):
-        http://localhost:5984/deepamehta3-db/_design/deepamehta3/index.html
+*   Create *To Do* topics just like any other topic.
 
-2.  You'll find the additional document type "To Do" in the type menu (next to the "Create" button).
+
+Updating
+--------
+
+1.  Go to your DeepaMehta 3 installation directory:
+        cd deepamehta3
+
+2.  Update DeepaMehta 3 Project Plugin:
+        couchapp vendor update dm3-project
+
+3.  Upload changes to CouchDB:
+        couchapp push http://localhost:5984/deepamehta3-db
+
+
+Version History
+---------------
+
+**v0.3** -- Mar 6, 2010
+
+* Compatible with DeepaMehta 3 v0.3
 
 
 ------------
 Jörg Richter  
-Dec 3, 2009
+Mar 6, 2010
